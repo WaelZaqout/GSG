@@ -1,0 +1,326 @@
+.container {
+    width: 82%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Stert header  */
+
+header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: #fafafa;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 97px;
+}
+header::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: calc(100% - 5px);
+    bottom: 0;
+    left: 0;
+    background-color: #bebebe;
+}
+header .logo img {
+    height: 30px;
+}
+header nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li{
+list-style-type: none;
+}
+header nav ul li a {
+    margin-right: 10px;
+    display: block;
+    color: #6e7a7c;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3;
+    padding: 20px 5px;
+    position: relative;
+}
+header nav ul li a.active,
+header nav ul li a:hover {
+    color: #f2babd; 
+} 
+
+/* End header */
+
+/* ********** */
+
+/* Start building   */
+
+.building .container {
+    margin: auto;
+    background-color: #f2babd;
+    height: calc(100vh - 64px);
+    position: relative;
+}
+.building .img img{
+    position: absolute;
+    top: 55%;
+    left:70%;
+    transform:translate(-50% , -50%) ;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+.building .intro-text {
+    position: absolute;
+    left: 35%;
+    top: 55%;
+    text-align: left;
+    transform:translate(-50% , -50%);
+    width: 600px;
+}
+.building .intro-text p {
+    font-size: 70px;
+    line-height: 1.5;
+}
+
+.button {
+    background-color: #fff; /* لون الزر */
+    color: rgb(54, 67, 73) ; /* لون النص على الزر */
+    padding: 10px 20px; /* هامش داخلي للزر */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+    bottom: 40px;
+    
+} 
+.building  .last {
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+    color: black;
+    font-size: 12px;
+}
+     /* End building   */
+
+     /* ****** */
+
+     /* Start services */
+
+.services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.services .services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+.services .services-content .title {
+    margin-left: 70px;
+}
+.services .services-content .col p  {
+    color: #777;
+}
+.services .services-content .col h1  {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.services .services-content .srv {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.services .services-content .srv i {
+    flex-basis: 30px;
+}
+.services .services-content .srv .text h3 {
+    margin: 0 0 10px;
+}
+.services .services-content .srv .text h3.active{
+    color: #f2babd;
+}
+.services .services-content .srv .text h3 i {
+    color: black;
+    margin-left: 10px;
+}
+.services .services-content .srv .text p  {
+    color: #777;
+    line-height: 1.8;
+    width: 260px;
+}
+/* End services */
+/* ****** */
+/* Start card  */
+.card-profile{
+    padding-bottom: 100px;
+}
+.card-profilep {
+    color: #777;
+    font-size: 20px;
+    text-align: center;
+}
+.card-profile h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    text-align: center;
+}
+.card-profile p{
+text-align: center;
+position: relative;
+top: 25px;
+color: #777;
+
+}
+.card-profile-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 30px;
+}
+.card-profile-content .card {
+    position: relative;
+}
+.card-profile-content .card .icon i{
+    display: block;
+    margin-bottom: 5px;
+}
+.card-profile-content .card .icon {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.card-profile-content .card img {
+    width: 85%;
+    height: 300px;
+}
+.card-profile-content .card .info {
+    margin-top: 10px;
+}
+.card-profile-content .card .info h3 {
+    font-size: 24px;
+    text-align: left;
+    position: relative;
+    bottom: 10px;
+}
+.card-profile-content .card .info p {
+    color: #777;
+    line-height: 1.6;
+    text-align: left;
+    font-size: medium;
+    position: relative;
+    bottom: 25px;
+}
+/* End card  */
+
+/* ****** */
+
+/* start main */
+.main {
+    padding-bottom: 100px;
+}
+.main p {
+    color: #777;
+    font-size: 20px;
+    text-align: left;
+}
+.main h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    text-align: left;
+}
+.main .main-content {
+    display: flex;
+    justify-content: space-between;
+}
+.main .colums {
+    width: 50%;
+}
+.main .main-content .colums .col {
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.main .main-content .colums .col .year {
+    color: #000;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.main .main-content .colums .text {
+    width: 400px;
+    margin-left: 100px;
+}
+.main .main-content .colums .text h2{
+    text-align: left;
+}
+.main .main-content .colums .text p{
+    text-align: left;
+    font-size: 18px;
+    width: 300px;
+    margin-top: 10px;
+}
+.main .main-img {
+    width: 50%;
+}
+.main img {
+    width: 100%;
+    height: 510px;
+    margin-top: 20px;
+}
+/* End main */
+
+/* ***** */
+
+/* start footer */
+.footer {
+    background-color: #f5f5f5;
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.footer span {
+    font-weight: bold;
+    color: black;
+}
+.footer p {
+    font-weight: bold;
+    color: #a1a0a0;
+}
+/* End footer */
+/* **** */
+/* Small */
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 1150px) {
+    .container {
+      width: 1100px;
+    }
+
+  }
+  /* Large */
+  @media (min-width: 1300px) {
+    .container {
+      width: 1200px;
+    }
+  }
